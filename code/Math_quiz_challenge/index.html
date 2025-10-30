@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Math Quiz Challenge - Made by Tanupriyo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="game-container">
+    <div id="bubble-container"></div>
+    <div id="setup">
+      <h1>🎯 Math Quiz Challenge</h1>
+      <div class="game-description">With the help of this game, children can easily learn and practice math in a fun way!</div>
+      <div class="made-by">Made by Tanupriyo</div>
+      <input type="text" id="playerName" placeholder="Enter your name" />
+      <div class="avatars">
+        <span class="avatar">😀</span>
+        <span class="avatar">😎</span>
+        <span class="avatar">🤓</span>
+        <span class="avatar">🐱</span>
+        <span class="avatar">🐶</span>
+      </div>
+      <select id="difficulty">
+        <option value="easy">Easy</option>
+        <option value="medium">Medium</option>
+        <option value="hard">Hard</option>
+      </select>
+      <select id="mode">
+        <option value="normal">Normal</option>
+        <option value="speed">Speed Round</option>
+        <option value="multiplication">Multiplication Only</option>
+        <option value="boss">Boss Round</option>
+        <option value="practice">Practice Mode (No timer)</option>
+        <option value="spelling">Spelling Math Mode</option>
+      </select>
+      <button id="startBtn">Start Quiz</button>
+    </div>
+
+    <div id="gameArea" class="hidden">
+      <div id="avatarDisplay"></div>
+      <div id="questionArea"></div>
+      <input type="number" id="answerInput" placeholder="Your answer" />
+      <button id="submitBtn">Submit</button>
+      <button id="hintBtn">💡 Hint</button>
+      <div id="hintArea"></div>
+      <div id="feedback"></div>
+      <div class="timer-bar">
+        <div class="timer-fill"></div>
+      </div>
+    </div>
+
+    <div id="resultArea" class="hidden">
+      <h2 id="finalScore"></h2>
+      <ul id="answerList"></ul>
+      <button id="printBtn">🎓 Download Certificate</button>
+      <button id="playAgainBtn">🔁 Play Again</button>
+      <div class="made-by" style="margin-top: 20px;">Made by Tanupriyo</div>
+    </div>
+
+    <div id="certificate" class="hidden">
+      <h2>🎓 Certificate of Completion</h2>
+      <p>This certifies that</p>
+      <h3 id="certName"></h3>
+      <p>has successfully completed the Math Quiz Challenge with a score of:</p>
+      <h3 id="certScore"></h3>
+      <p style="font-style: italic;">Math is fun with Tanupriyo!</p>
+      <p style="font-size: 0.9rem; color: #555;">Certificate ID: <span id="certId"></span></p>
+      <p class="made-by">Made by Tanupriyo</p>
+    </div>
+
+    <div id="youtubePlayer" style="display:none"></div>
+  </div>
+
+   <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+   <script src="script.js"></script>
+  </body>
+</html>
